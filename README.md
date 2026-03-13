@@ -1,6 +1,4 @@
-# Probably Won't But Confident 
-
-**[history.valyu.ai](https://history.valyu.ai)**
+# PWBC (Probably Wrong But Confident)
 
 > I can't stop doomscrolling Google Maps so I built AI that researches anywhere on Earth
 
@@ -18,7 +16,7 @@ Then you try to research it and it's hell. 47 Wikipedia tabs. A poorly-translate
 
 ## The Solution
 
-Click anywhere on a globe. Get actual research. It searches hundreds of sources for up to 10 minutes and gives you the full story. With citations so you know it's not making shit up.
+Click anywhere on a globe. Get actual research. It searches hundreds of sources and gives you the full story. With citations so you know it's not making shit up.
 
 Not ChatGPT summarizing from training data. **Actual research.** It searches:
 - Historical databases and archives
@@ -50,7 +48,7 @@ The databases exist. The archives are digitized. The APIs are built. Someone jus
 
 ## Storytelling Mode
 
-But wait - there's more. History doesn't just dump facts on you. It **tells a story**.
+But wait - there's more. PWBC doesn't just dump facts on you. It **tells a story**.
 
 When you research a location, the AI crafts a narrative documentary-style experience. It doesn't just answer "what happened" - it explains **why it matters**. The storytelling engine:
 
@@ -59,26 +57,20 @@ When you research a location, the AI crafts a narrative documentary-style experi
 - **Contextual depth** - Connects events across time periods
 - **Engaging presentation** - Structured like a documentary script, not a Wikipedia article
 
-Think of it as your personal history documentary producer. Give it a location, and it'll spend 10 minutes digging through archives, academic papers, and historical records to craft a compelling narrative about that place.
+Think of it as your personal history documentary producer. Give it a location, and it'll dig through archives, academic papers, and historical records to craft a compelling narrative about that place.
 
 ## Key Features
 
 ### Real Research Infrastructure
-- **Valyu DeepResearch API** - Access to academic databases, archives, historical records
-- **Runs for up to 10 minutes** - Searches hundreds of sources
+- **AI-powered research** - Searches hundreds of sources across the web
 - **Full citations** - Every claim linked to verifiable sources
-- **Live progress tracking** - Watch the research unfold in real-time, see every source it queries
+- **Live progress tracking** - Watch the research unfold in real-time
 
 ### Interactive Globe
 - **3D Satellite Visualization** - Stunning Mapbox satellite imagery with globe projection
 - **Click literally anywhere** - Any country, island, mountain, or geographical feature
 - **Random Discovery** - "I'm Feeling Lucky" button for random location exploration
 - **Multiple Map Styles** - Satellite, streets, outdoors, and more
-
-### Save & Share
-- **Research History** - Save and revisit your discoveries
-- **Shareable Links** - Generate public links to research
-- **Mobile responsive** - Works on phone/tablet/desktop
 
 ### Storytelling Features
 - **Documentary-style narratives** - AI-crafted stories that flow like a documentary
@@ -89,7 +81,6 @@ Think of it as your personal history documentary producer. Give it a location, a
 ## Technology Stack
 
 ### Research & AI
-- **[Valyu DeepResearch API](https://platform.valyu.ai)** - Comprehensive search across databases, archives, academic sources
 - **[Gemini AI](https://gemini.google.com/)** - AI-powered content generation, image creation, and diagram generation
 - **[Tavily Search API](https://tavily.com/)** - Web search and historical image retrieval
 
@@ -99,33 +90,27 @@ Think of it as your personal history documentary producer. Give it a location, a
 - **[Tailwind CSS](https://tailwindcss.com)** + **[Framer Motion](https://www.framer.com/motion/)** - Beautiful UI with smooth animations
 - **[React Markdown](https://github.com/remarkjs/react-markdown)** - Rendering research reports
 
-### Backend
-- **[SQLite](https://www.sqlite.org/)** - Local database
-- **[Drizzle ORM](https://orm.drizzle.team/)** - Type-safe database queries
-
 ### Infrastructure
 - **[Vercel](https://vercel.com)** - Deployment and hosting
 - **TypeScript** - Type safety throughout
 
 Fully open-source. Self-hostable. Model-agnostic.
 
-## Quick Start (Self-Hosted)
-
-Self-hosted mode is the recommended way to run History locally. It requires only 2 API keys and takes about 5 minutes to set up.
+## Quick Start
 
 ### Prerequisites
 
 - Node.js 18+
 - pnpm, npm, or yarn
-- Valyu DeepResearch API key ([get one free at platform.valyu.ai](https://platform.valyu.ai))
+- Gemini API key ([get one free at makersuite.google.com](https://makersuite.google.com/app/apikey))
 - Mapbox access token ([get one free at mapbox.com](https://account.mapbox.com))
 
 ### Installation
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yorkeccak/history.git
-   cd history
+   git clone https://github.com/Shanky0007/PWBC.git
+   cd PWBC
    ```
 
 2. **Install dependencies**
@@ -140,11 +125,8 @@ Self-hosted mode is the recommended way to run History locally. It requires only
    Create a `.env.local` file in the root directory:
 
    ```env
-   # Self-Hosted Mode - No Auth Required
-   NEXT_PUBLIC_APP_MODE=self-hosted
-
-   # Valyu API (Required)
-   VALYU_API_KEY=valyu_your_api_key_here
+   # Gemini API (Required for storytelling)
+   GEMINI_API_KEY=your_gemini_api_key_here
 
    # Mapbox Configuration (Required)
    NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN=pk.your_mapbox_access_token_here
@@ -187,56 +169,33 @@ Self-hosted mode is the recommended way to run History locally. It requires only
 
 3. **Watch the Research**
    - See the AI's reasoning process
-   - View tool calls (web searches, database queries)
-   - See sources being discovered in real-time
+   - View searches and sources being discovered in real-time
 
 4. **Review Results**
    - Read the comprehensive historical analysis
    - Click on source citations to verify information
-   - View images and visual aids (if available)
-
-5. **Save for Later**
-   - Your research is automatically saved locally
-   - Access past research from the sidebar
+   - View images and visual aids
 
 ### Advanced Features
 
 - **Random Discovery**: Click "Random Location" to explore a random place on Earth
 - **Map Styles**: Switch between satellite, streets, and other map styles
-- **Reasoning View**: Click to see the detailed reasoning trace of the AI
 - **Dark Mode**: Automatically matches your system preferences
 - **Storytelling Mode**: Experience locations through documentary-style narratives
 
-## App Modes
-
-### Self-Hosted Mode (Recommended)
-```env
-NEXT_PUBLIC_APP_MODE=self-hosted
-```
-
-**Features:**
-- No Supabase required - uses local SQLite
-- No authentication needed - auto-login as dev user
-- Unlimited queries - no rate limits
-- Uses your Valyu API key directly
-- Works completely offline (except API calls)
-- Perfect for local usage and contributing
-
 ## Getting API Keys
 
-### Valyu API (Required)
+### Gemini API (Required)
 
-1. Go to [platform.valyu.ai](https://platform.valyu.ai)
-2. Sign up for a free account
-3. Navigate to API Keys
-4. Create a new API key
-5. Add it to `.env.local` as `VALYU_API_KEY`
+1. Go to [makersuite.google.com/app/apikey](https://makersuite.google.com/app/apikey)
+2. Sign in with your Google account
+3. Create a new API key
+4. Add it to `.env.local` as `GEMINI_API_KEY`
 
 **Pricing:**
 - Free tier available for testing
 - Pay-as-you-go pricing for production
-- Fast model: approximately $0.10 per research
-- Heavy model: approximately $0.50 per research
+- Generous free limits for Gemini Flash models
 
 ### Mapbox Access Token (Required)
 
@@ -249,79 +208,16 @@ NEXT_PUBLIC_APP_MODE=self-hosted
 - 50,000 free map loads per month
 - Additional usage billed per load (very affordable)
 
-### Gemini API (Required for Storytelling Mode)
-
-1. Go to [makersuite.google.com/app/apikey](https://makersuite.google.com/app/apikey)
-2. Sign in with your Google account
-3. Create a new API key
-4. Add it to `.env.local` as `GEMINI_API_KEY`
-
-**Pricing:**
-- Free tier available for testing
-- Pay-as-you-go pricing for production
-- Generous free limits for Gemini Flash models
-
-## Database Schema
-
-History uses a minimal database schema optimized for the DeepResearch API:
-
-### `users`
-```sql
-- id: UUID (primary key)
-- email: text
-- avatar_url: text
-- subscription_tier: enum (free, pay_per_use, subscription)
-- subscription_status: enum (active, inactive)
-- polar_customer_id: text
-- subscription_id: text
-- created_at: timestamp
-- updated_at: timestamp
-```
-
-### `research_tasks`
-```sql
-- id: UUID (primary key)
-- user_id: UUID (foreign key to users)
-- deepresearch_id: text (Valyu API task ID)
-- location_name: text
-- location_lat: float
-- location_lng: float
-- location_images: jsonb
-- status: enum (queued, running, completed, failed)
-- anonymous_id: text
-- is_public: boolean
-- share_token: text
-- shared_at: timestamp
-- created_at: timestamp
-- updated_at: timestamp
-- completed_at: timestamp
-```
-
-### `user_rate_limits`
-```sql
-- id: UUID (primary key)
-- user_id: UUID (foreign key to users)
-- usage_count: integer
-- reset_date: text
-- monthly_usage_count: integer
-- monthly_reset_date: text
-- last_request_at: timestamp
-- created_at: timestamp
-- updated_at: timestamp
-```
-
-**Note:** Full research content is stored in Valyu's DeepResearch API. We only store metadata and task IDs, keeping the database lean and avoiding duplication.
-
 ## Contributing
 
-History is fully open-source. Contributions are welcome and appreciated.
+PWBC is fully open-source. Contributions are welcome and appreciated.
 
 ### How to Contribute
 
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature/amazing-feature`)
 3. Make your changes
-4. Test in self-hosted mode (`NEXT_PUBLIC_APP_MODE=self-hosted`)
+4. Test locally
 5. Commit your changes (`git commit -m 'Add amazing feature'`)
 6. Push to the branch (`git push origin feature/amazing-feature`)
 7. Open a Pull Request
@@ -352,7 +248,7 @@ Perfect for:
 ## Known Issues & Limitations
 
 - Mapbox free tier limited to 50k loads/month
-- DeepResearch API calls cost money (though very reasonable)
+- AI API calls cost money (though very reasonable)
 - Globe performance may be slower on older devices
 - Some remote locations may have limited historical data
 
@@ -362,9 +258,8 @@ This project is open-source and available under the MIT License.
 
 ## Support & Questions
 
-- **Issues**: [Open an issue](https://github.com/yorkeccak/history/issues) on GitHub
-- **Discussions**: [Join the discussion](https://github.com/yorkeccak/history/discussions)
-- **Hosted Version**: Try it at [history.valyu.ai](https://history.valyu.ai)
+- **Issues**: [Open an issue](https://github.com/Shanky0007/PWBC/issues) on GitHub
+- **Discussions**: [Join the discussion](https://github.com/Shanky0007/PWBC/discussions)
 
 ## Roadmap
 
@@ -386,7 +281,6 @@ Future features under consideration:
 
 This project was born from countless hours spent exploring Google Maps, clicking on random islands, mountains, and remote places at 2am, and wanting to know their stories. Special thanks to:
 
-- **[Valyu](https://valyu.ai)** - For building an incredible DeepResearch API that makes this possible
 - **[Google Gemini](https://gemini.google.com/)** - For powerful AI content generation capabilities
 - **[Tavily](https://tavily.com/)** - For excellent web search and image retrieval
 - **[Mapbox](https://mapbox.com)** - For beautiful, performant globe visualization
