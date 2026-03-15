@@ -1,94 +1,117 @@
 # PWBC (Probably Wrong But Confident)
 
-> I can't stop doomscrolling Google Maps so I built AI that researches anywhere on Earth
+> Research isn't boring. History isn't a textbook. Facts are Shakespeare.
 
-An interactive 3D globe that lets you explore the fascinating history of any location on the planet. Born from opening Google Maps in satellite view at 2am and clicking on random shit - obscure atolls in the Pacific that look like someone dropped a pixel, unnamed mountains in Kyrgyzstan, Arctic settlements with 9 people. Places so remote they don't have Wikipedia pages.
+An interactive 3D globe that transforms geographical research into immersive, multimodal storytelling experiences. Click anywhere on Earth and watch as raw research data becomes an elegant, creative narrative—woven together with text, images, diagrams, and interactive elements in a single fluid stream.
 
-Be curious.
+Think of it as having a creative director in your pocket who researches like a scholar but tells stories like Shakespeare—elegant, over-the-top, deeply engaging, and impossible to look away from.
 
 ## The Problem
 
-I have a problem. I'll lose 6 hours to doomscrolling Google Maps. Just clicking. Finding volcanic islands that look photoshopped. Fjords that defy physics. Tiny dots of land in the middle of nowhere. And every single time I think: **what IS this place? Who found it? Why does it exist? What happened here?**
+Research is broken. You click on a location and get:
+- 47 Wikipedia tabs with dry facts
+- Academic papers written for other academics
+- Travel blogs that are just ads
+- Reddit comments from people who "think" they know
 
-Then you try to research it and it's hell. 47 Wikipedia tabs. A poorly-translated Kazakh government PDF from 2003. A travel blog from 1987. A single Reddit comment from 2014 that says "I think my uncle went there once." You piece it together like a conspiracy theorist and still don't get the full story.
+The information exists. The stories are there. But they're buried under mountains of boring presentation.
 
-**The information exists somewhere.** Historical databases. Academic archives. Colonial records. Exploration logs from the 1800s. But it's scattered everywhere and takes forever to find.
+**What if facts could be beautiful?** What if learning about a place felt like watching a documentary directed by someone who actually cares about engaging you?
 
-## The Solution
+## The Solution: Multimodal Storytelling with Interleaved Output
 
-Click anywhere on a globe. Get actual research. It searches hundreds of sources and gives you the full story. With citations so you know it's not making shit up.
+PWBC doesn't just research. It **creates**. Like a creative director, it thinks in multiple mediums simultaneously:
 
-Not ChatGPT summarizing from training data. **Actual research.** It searches:
-- Historical databases and archives
-- Academic papers and journals
-- Colonial records and exploration logs
-- Archaeological surveys
-- Wikipedia and structured knowledge bases
-- Real-time web sources
+Click on **Tristan da Cunha** and instead of a research dump, you experience:
 
-**Example: Tristan da Cunha** (most remote inhabited island on Earth, population 245)
+```
+[ELEGANT NARRATION]
+"In 1506, Portuguese explorers stumbled upon an impossibly remote island 
+in the South Atlantic—a volcanic speck so isolated that for centuries, 
+the world forgot it existed."
 
-Click on it and you get:
-- Discovery by Portuguese explorers in 1506
-- British annexation in 1816 (strategic location during Napoleonic Wars)
-- Volcanic eruption in 1961 that evacuated the entire population
-- Current economy (crayfish export, philately)
-- Cultural evolution of the tiny community
-- Full timeline with sources
+[ATMOSPHERIC IMAGE]
+Aerial view of dramatic basalt cliffs, golden light catching the peaks, 
+waves crashing against ancient stone.
 
-What would take hours of manual research happens automatically. And you can verify everything.
+[INTERACTIVE TIMELINE]
+Visual representation of key moments: Discovery → British Annexation → 
+Volcanic Eruption → Modern Community
 
-## Why This Exists
+[NARRATION CONTINUES]
+"Then came 1961. A volcano that had slept for 200 years woke up. 
+The entire population—all 245 people—had to evacuate..."
 
-Because I've spent literal months of my life doomscrolling Google Maps clicking on random islands at 3am and I want to actually understand them. Not skim a 4-paragraph Wikipedia stub. Not guess based on the name. **Proper historical research. Fast.**
+[DIAGRAM]
+Map showing evacuation routes, population distribution, current settlement
 
-The databases exist. The archives are digitized. The APIs are built. Someone just needed to connect them to a globe and make it accessible.
+[CREATIVE INSIGHT]
+"Today, they export crayfish and postage stamps. Yes, postage stamps. 
+Because when you're the most remote inhabited place on Earth, 
+even your mail becomes a collector's item."
+```
 
-**This is what AI should be doing.** Not writing emails. Augmenting genuine human curiosity about the world.
+This isn't a research report. This is an **interactive storybook** where facts are woven into narrative, visuals appear exactly when they matter, and the story flows like a film—not a textbook.
 
-## Storytelling Mode
+## How It Works: The Creative Director Agent
 
-But wait - there's more. PWBC doesn't just dump facts on you. It **tells a story**.
+PWBC uses Gemini's native interleaved output to act like a creative director:
 
-When you research a location, the AI crafts a narrative documentary-style experience. It doesn't just answer "what happened" - it explains **why it matters**. The storytelling engine:
+1. **Research Phase** - Gathers data from hundreds of sources (Tavily, academic databases, archives)
+2. **Creative Synthesis** - Transforms raw facts into narrative structure
+3. **Multimodal Generation** - Seamlessly interleaves:
+   - **Text Narration** - Elegant, engaging prose (not academic jargon)
+   - **Generated Imagery** - Visuals appear inline where they enhance understanding
+   - **Diagrams & Maps** - Complex information visualized beautifully
+   - **Interactive Elements** - Timelines, comparisons, explorations
+   - **Audio Scripts** - Optional voiceover narration for key moments
 
-- **Narrative flow** - Builds a cohesive story from scattered historical threads
-- **Visual storytelling** - Generates relevant images and diagrams to illustrate key moments
-- **Contextual depth** - Connects events across time periods
-- **Engaging presentation** - Structured like a documentary script, not a Wikipedia article
-
-Think of it as your personal history documentary producer. Give it a location, and it'll dig through archives, academic papers, and historical records to craft a compelling narrative about that place.
+4. **Fluid Output Stream** - Everything flows together in one cohesive experience
 
 ## Key Features
 
-### Real Research Infrastructure
-- **AI-powered research** - Searches hundreds of sources across the web
-- **Full citations** - Every claim linked to verifiable sources
-- **Live progress tracking** - Watch the research unfold in real-time
+### 🌍 Interactive 3D Globe
+- Click literally anywhere on Earth
+- Satellite imagery with multiple map styles
+- Random discovery for serendipitous exploration
+- Responsive on all devices
 
-### Interactive Globe
-- **3D Satellite Visualization** - Stunning Mapbox satellite imagery with globe projection
-- **Click literally anywhere** - Any country, island, mountain, or geographical feature
-- **Random Discovery** - "I'm Feeling Lucky" button for random location exploration
-- **Multiple Map Styles** - Satellite, streets, outdoors, and more
+### 📖 Multimodal Storytelling
+- **Text + Visuals + Diagrams** - All interleaved in real-time
+- **Creative Narration** - Facts told with elegance and personality
+- **Interactive Elements** - Timelines, maps, comparisons
+- **Engagement-First Design** - Even non-readers stay engaged
 
-### Storytelling Features
-- **Documentary-style narratives** - AI-crafted stories that flow like a documentary
-- **Visual aids** - Generated images and diagrams to illustrate key moments
-- **Contextual connections** - Links events across time periods
-- **Engaging presentation** - Not just facts - a story worth telling
+### 🎨 Creative Director AI
+- Thinks like a filmmaker, not a search engine
+- Transforms research into narrative
+- Generates contextual imagery on-the-fly
+- Weaves multiple mediums seamlessly
+
+### 🔍 Real Research Infrastructure
+- Searches hundreds of sources simultaneously
+- Academic databases, archives, historical records
+- Full citations for verification
+- Live progress tracking
+
+### 💾 Save & Share
+- Research history with full multimodal content
+- Shareable links with embedded storytelling
+- Export as interactive documents
+- Mobile-responsive sharing
 
 ## Technology Stack
 
 ### Research & AI
-- **[Gemini AI](https://gemini.google.com/)** - AI-powered content generation, image creation, and diagram generation
-- **[Tavily Search API](https://tavily.com/)** - Web search and historical image retrieval
+- **[Gemini AI](https://gemini.google.com/)** - Multimodal content generation with interleaved output
+- **[Tavily Search API](https://tavily.com/)** - Real-time web search and image retrieval
+- **Native Interleaved Output** - Seamless text + image + diagram generation
 
 ### Frontend
 - **[Next.js 15](https://nextjs.org)** + **[React 19](https://react.dev)** - Modern web framework
-- **[Mapbox GL JS](https://www.mapbox.com/mapbox-gljs)** - Interactive 3D globe visualization
-- **[Tailwind CSS](https://tailwindcss.com)** + **[Framer Motion](https://www.framer.com/motion/)** - Beautiful UI with smooth animations
-- **[React Markdown](https://github.com/remarkjs/react-markdown)** - Rendering research reports
+- **[Mapbox GL JS](https://www.mapbox.com/mapbox-gljs)** - Interactive 3D globe
+- **[Tailwind CSS](https://tailwindcss.com)** + **[Framer Motion](https://www.framer.com/motion/)** - Beautiful animations
+- **[React Markdown](https://github.com/remarkjs/react-markdown)** - Rich content rendering
 
 ### Infrastructure
 - **[Vercel](https://vercel.com)** - Deployment and hosting
@@ -122,10 +145,10 @@ Fully open-source. Self-hostable. Model-agnostic.
 
 3. **Set up environment variables**
 
-   Create a `.env.local` file in the root directory:
+   Create a `.env.local` file:
 
    ```env
-   # Gemini API (Required for storytelling)
+   # Gemini API (Required for multimodal storytelling)
    GEMINI_API_KEY=your_gemini_api_key_here
 
    # Mapbox Configuration (Required)
@@ -138,50 +161,105 @@ Fully open-source. Self-hostable. Model-agnostic.
 4. **Run the development server**
    ```bash
    pnpm dev
-   # or npm run dev
-   # or yarn dev
    ```
 
 5. **Open your browser**
 
    Navigate to [http://localhost:3000](http://localhost:3000)
 
-6. **Start exploring**
-
-   - Click anywhere on the globe to research that location
-   - Use the "Random Location" button to discover somewhere new
-   - Watch the AI research unfold in real-time
-   - See the storytelling mode in action with documentary-style narratives
-
 ## How to Use
 
-### Basic Usage
+### Basic Workflow
 
 1. **Navigate the Globe**
    - Drag to rotate
-   - Scroll to zoom in/out
-   - The globe auto-rotates when idle
+   - Scroll to zoom
+   - Auto-rotates when idle
 
-2. **Research a Location**
-   - Click on any country, city, island, or geographical feature
-   - A popup will show the location name
-   - The research interface opens automatically
+2. **Click to Research**
+   - Click any location
+   - Confirm your research interest
+   - Watch the creative director work
 
-3. **Watch the Research**
-   - See the AI's reasoning process
-   - View searches and sources being discovered in real-time
+3. **Experience the Story**
+   - Read elegant narration
+   - See contextual imagery appear
+   - Explore interactive diagrams
+   - Discover connections and insights
 
-4. **Review Results**
-   - Read the comprehensive historical analysis
-   - Click on source citations to verify information
-   - View images and visual aids
+4. **Engage Deeper**
+   - Click citations to verify facts
+   - Explore related locations
+   - Save stories for later
+   - Share with others
 
 ### Advanced Features
 
-- **Random Discovery**: Click "Random Location" to explore a random place on Earth
-- **Map Styles**: Switch between satellite, streets, and other map styles
-- **Dark Mode**: Automatically matches your system preferences
-- **Storytelling Mode**: Experience locations through documentary-style narratives
+- **Random Discovery** - Let serendipity guide you
+- **Custom Instructions** - Guide the narrative direction
+- **Source Filtering** - Choose which sources to prioritize
+- **Storytelling Modes** - Different narrative styles
+- **Dark Mode** - Matches your system preferences
+
+## The Creative Director Difference
+
+Traditional research tools show you information. PWBC **tells you stories**.
+
+**Before (Traditional Research):**
+```
+Tristan da Cunha
+- Population: 245
+- Location: South Atlantic
+- Founded: 1506
+- Economy: Fishing, postage stamps
+```
+
+**After (PWBC Storytelling):**
+```
+[NARRATION]
+"Imagine a place so remote that the nearest neighbor is 2,400 kilometers away. 
+A volcanic island where the entire world population could fit in a small town. 
+Where your mail becomes a collector's item simply because you live there."
+
+[IMAGE]
+Dramatic volcanic landscape with golden light
+
+[INSIGHT]
+"In 1961, a volcano woke up. The entire population evacuated. 
+When they returned, they came back to rebuild—not because they had to, 
+but because home is home, no matter how remote."
+
+[TIMELINE]
+Visual journey through 500 years of history
+
+[REFLECTION]
+"Today, they export crayfish and dreams. 
+Because isolation breeds resilience, and resilience breeds community."
+```
+
+See the difference? One is information. The other is **experience**.
+
+## Use Cases
+
+### 📚 Interactive Storybooks
+- Educational content that actually engages students
+- History that comes alive
+- Geography that tells stories
+
+### 🎬 Documentary-Style Narratives
+- Research presented like a film
+- Facts woven with visuals
+- Engagement-first design
+
+### 🎨 Creative Content Generation
+- Marketing copy + visuals + diagrams
+- Social media content with context
+- Presentation materials that wow
+
+### 🧠 Learning & Discovery
+- Make research fun again
+- Engage non-traditional learners
+- Turn facts into stories
 
 ## Getting API Keys
 
@@ -194,7 +272,7 @@ Fully open-source. Self-hostable. Model-agnostic.
 
 **Pricing:**
 - Free tier available for testing
-- Pay-as-you-go pricing for production
+- Pay-as-you-go for production
 - Generous free limits for Gemini Flash models
 
 ### Mapbox Access Token (Required)
@@ -206,11 +284,11 @@ Fully open-source. Self-hostable. Model-agnostic.
 
 **Pricing:**
 - 50,000 free map loads per month
-- Additional usage billed per load (very affordable)
+- Additional usage billed per load
 
 ## Contributing
 
-PWBC is fully open-source. Contributions are welcome and appreciated.
+PWBC is fully open-source. Contributions are welcome.
 
 ### How to Contribute
 
@@ -224,69 +302,68 @@ PWBC is fully open-source. Contributions are welcome and appreciated.
 
 ### Areas for Contribution
 
-- Additional map styles and visualizations
-- Location bookmarking and collections
-- Image galleries for historical locations
-- Mobile app optimizations
-- Multi-language support
-- Data visualizations (timelines, charts)
-- Advanced search and filtering
+- New storytelling narrative styles
+- Additional media types (video, audio)
+- Enhanced visual generation
+- Interactive element types
+- Language support
 - Accessibility improvements
-- Storytelling enhancements (new narrative styles, better visual aids)
+- Performance optimizations
+- Mobile app versions
 
 ## Who This Is For
 
-If you also spend hours clicking random islands on Google Maps, you'll understand why this needed to exist.
+If you believe research should be engaging. If you think facts can be beautiful. If you've ever wished learning felt less like homework and more like discovery.
 
 Perfect for:
-- People who doomscroll maps like me
-- History researchers who need quick location context
-- Travel planners researching destinations
-- Students learning world geography
-- Anyone curious about literally any place on Earth
+- Students who want to actually enjoy learning
+- Educators looking to engage students
+- Content creators needing rich narratives
+- Researchers wanting beautiful presentations
+- Anyone curious about the world
 
-## Known Issues & Limitations
+## Known Limitations
 
-- Mapbox free tier limited to 50k loads/month
-- AI API calls cost money (though very reasonable)
-- Globe performance may be slower on older devices
-- Some remote locations may have limited historical data
+- Mapbox free tier: 50k loads/month
+- Gemini API calls cost money (very reasonable)
+- Some remote locations have limited historical data
+- Interleaved output requires modern browsers
 
 ## License
 
-This project is open-source and available under the MIT License.
+MIT License - Open source and free to use.
 
 ## Support & Questions
 
 - **Issues**: [Open an issue](https://github.com/Shanky0007/PWBC/issues) on GitHub
 - **Discussions**: [Join the discussion](https://github.com/Shanky0007/PWBC/discussions)
+- **Feedback**: We'd love to hear how you're using PWBC
 
 ## Roadmap
 
-Future features under consideration:
+- [ ] Video generation and embedding
+- [ ] Audio narration with voice synthesis
+- [ ] Multiple narrative styles (Shakespeare, Journalist, Poet, etc.)
+- [ ] Collaborative storytelling
+- [ ] Advanced timeline visualizations
+- [ ] 3D historical recreations
+- [ ] AR view for mobile
+- [ ] Offline mode with cached stories
+- [ ] Community-contributed narratives
+- [ ] API for third-party integrations
 
-- Timeline visualization with historical events
-- Multiple locations comparison
-- Historical image galleries from archives
-- PDF export of research reports
-- Collaborative research sharing
-- Location bookmarks and collections
-- Advanced filters (time periods, topics, event types)
-- Mobile app versions (iOS, Android)
-- Offline mode with cached research
-- 3D historical recreations
-- AR view for mobile devices
+## The Philosophy
 
-## Inspiration & Acknowledgments
+Research shouldn't be boring. History shouldn't be a textbook. Facts shouldn't put you to sleep.
 
-This project was born from countless hours spent exploring Google Maps, clicking on random islands, mountains, and remote places at 2am, and wanting to know their stories. Special thanks to:
+PWBC is built on the belief that **information becomes powerful when it's beautiful**. That engagement matters more than exhaustiveness. That a well-told story about a place teaches you more than a thousand facts ever could.
 
-- **[Google Gemini](https://gemini.google.com/)** - For powerful AI content generation capabilities
-- **[Tavily](https://tavily.com/)** - For excellent web search and image retrieval
-- **[Mapbox](https://mapbox.com)** - For beautiful, performant globe visualization
+We're not trying to replace academic research. We're trying to make discovery fun again.
 
 ---
 
-**Built for geography enthusiasts, history buffs, map doomscrollers, and curious minds everywhere.**
+**Built for curious minds who believe facts can be beautiful.**
 
-*Explore. Discover. Learn.*
+*Click. Discover. Experience. Learn.*
+
+**PWBC: Where Research Meets Storytelling**
